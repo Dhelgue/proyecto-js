@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+    
+<head>    
+<meta charset="utf-8">
+<meta name="description" content="Pacifico Champions League">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    
+<title>Last-Fm</title>
+
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="start"> 
+
+
+<header>
+   
+    <nav class="menuArriba">
+        <ul>
+            <li>LAST-FM</li>
+        </ul>  
+    </nav> 
+    
+        <div style="text-align: center;"  class="country-title">
+        
+        <h1>TOP 50 TRACKS <label id="countryName"></label></h1>
+        
+        <select id="countrySelect" onchange="init()">
+            <option value="">Selecciona un elemento</option>
+            <option value="spain">SPAIN</option>
+            <option value="france">FRANCE</option>
+            <option value="germany">GERMANY</option>
+            <option value="italy">ITALY</option>
+            <option value="portugal">PORTUGAL</option>
+        </select>
+        
+    </div>
+    
+</header>
+
+<main>
+
+
+    
+    <gallery id="tracks"></gallery>
+
+    <span class="subir">▲</span>
+    
+
+</main>
+
+<footer>Creado por @dhelgue</footer>
+    
+<script src="js/libs/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+API KEY LAST.FM: 
+
+
+Application name	master javascript
+API key	2d996a50d61fd83ca3cffb400d3a504b
+Shared secret	0bae2e06a0da2750c8f664058a119df4
+Registered to	dhelgue

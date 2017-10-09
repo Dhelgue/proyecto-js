@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Audiowide');
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+html {
+    -webkit-font-smoothing: antialiased;
+    
+    
+
+}
+
+body {
+    font-size: 125% ;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: lightblue ;
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    bottom: 0 ; 
+}
+
+#start {
+    background-image: url(../img/fondo.svg) ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+
+}
+header {
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    z-index: 999 ;
+    background-color: rgba(0,139,139, .9) ;
+    box-shadow: 0px 1px 4px rgba(0,100,139, 1) ;
+}
+
+.scrolled .menuArriba, .scrolled #countrySelect, .scrolled h1 {
+    font-size: 1rem ;
+}
+
+.scrolled .menuArriba {
+    height: 2.5em;
+    line-height: 2.5em ;
+    
+}
+
+ h1  {
+    font-size: 1.2em ;
+    text-align: center ;
+    letter-spacing: .4em ;
+    line-height: 2em ;
+    color: whitesmoke ;
+    font-weight: bold ;
+    
+}
+
+
+.menuArriba {
+    transition: all .2s ;
+    text-decoration: none ;
+    text-align: center ;
+    display: block ;
+    height: 2em ;
+    font-size: 1.7em ;
+    letter-spacing: .5em ;
+    font-weight: bold ;
+    line-height: 2em ;
+    color: white;
+    background-color: teal;
+
+    }
+
+
+#countrySelect {
+    font-size: 1em ;
+    width: 13em ;
+    height: 2em ;
+    border-radius: .3em ;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: rgba(0, 105, 92, 1) ;
+    color: whitesmoke ;
+    cursor: pointer ;
+    transition: all .5s ;
+    box-shadow: none ;       
+    border: 0 ;
+    padding-left: 2em ;
+    margin-bottom: 1em;
+    border: 5px rgba(0,139,139, 1) solid ;
+    box-sizing: content-box ;
+    
+}
+
+    #countrySelect:hover {
+        background-color: rgba(0,100,150,1);
+    }
+
+main {
+    position: relative;
+    background-color: lightblue;
+    top: 7.4em;
+    width: 100% ;
+}
+
+
+main li {
+    display: flex ;
+    
+}
+
+label {
+    text-transform: uppercase ;
+}
+
+
+#tracks {
+    margin: 3em ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: center ;
+    
+
+    
+}
+ 
+#tracks .track {
+    margin: .4em ;
+    position: relative ;
+    background-color: rgba(0,100,150,.2) ;
+    border-radius: .8em .8em 0 0 ;
+    overflow: hidden ;
+    left: 0 ;
+    opacity: 100 ;
+    animation: show 1s ease-in-out ;  
+
+}
+
+@keyframes show {
+    0% {
+        opacity: 0 ;
+        left: -2000px ;
+    }
+}
+
+#tracks .track .cantante {
+    text-align: center ;
+    background-color: rgba(0,100,150,.5) ;
+    font-size: 1.3em ;
+    position: absolute ;
+    width: 100% ;
+    top: 0 ;
+    color: white ;
+    padding: .5em 0;
+    text-transform: uppercase;
+
+}
+
+#tracks .track .title {
+    text-align: center ;
+    font-size: 1.3em ;
+    padding: .5em ;
+    color: rgba(0,0,100,1) ;
+    font-weight: bold ;
+    
+
+}
+
+#tracks .track p {
+    text-align: center ;
+    font-size: 1em ;
+    padding: .3em ;
+    color: rgba(0,0,100,1) ;
+	background: rgba(0,100,150,.2) ;
+    border-radius: 1em ;
+    width: 80% ;
+    margin: .3em auto ;
+
+}
+
+#tracks .track .image {
+    border-radius: .8em .8em 0 0 ;
+    overflow: hidden ;
+    cursor: pointer ;
+    transition: all 1s ;
+    filter: grayscale();
+}
+
+   #tracks .track .image:hover {
+    transform: scale(1.4);
+    filter: grayscale(0);
+
+}
+    
+.subir {
+	display: none ;
+	padding: 20px ;
+	background: rgba(0,100,150,.8) ;
+	font-size: 20px ;
+	color: #fff ;
+	cursor: pointer ;
+	position: fixed ;
+	bottom: 80px ;
+	right: 20px ;
+    border-radius: 60px
+}
+
+footer {
+    position: absolute;
+    padding: 1em ;
+    box-sizing: border-box ;
+    width: 100% ;
+    bottom: 0 ;
+    text-align: center ;
+    font-size: 1em ;
+    line-height: 1em ;
+    color: white ;
+    background-color: rgba(0,100,150,.6) ;
+}
+
+
+.desplazado {
+    position: relative ;
+    bottom: -10em ;
+}
